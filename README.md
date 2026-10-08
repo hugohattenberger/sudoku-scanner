@@ -22,8 +22,8 @@ photo → 4 coins placés par l'utilisateur → redressement de perspective
 
 | Mesure | Valeur |
 |---|---|
-| Exactitude par case (test, 200 grilles) | [~99,5 %] |
-| Grilles entièrement bien lues (test) | [90 %] |
+| Exactitude par case (test, 200 grilles) | ~99,5 % |
+| Grilles entièrement bien lues (test) | 90 % |
 | Solveur : placements erronés sur 500 grilles de référence | 0 |
 | Grilles résolues par la logique seule | 64 % |
 
@@ -36,7 +36,7 @@ les erreurs se concentrent sur quelques grilles difficiles.
 
 uv sync
 uvicorn main:app
-streamlit run app_frontend.py
+uv run streamlit run app_frontend.py
 
 ## Limites
 
