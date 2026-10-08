@@ -97,7 +97,7 @@ def processing_inference(image, keypoints, size = 450):
   return vignettes_pil
 
 
-# Keypoints (code généré avec llm)
+
   
 def ordonner_points(points_bruts):
     # Transformer la liste plate [x1, y1, x2, y2...] en matrice 4x2 : [[x1, y1], ...]
@@ -119,7 +119,8 @@ def ordonner_points(points_bruts):
     # Aplatir le résultat pour qu'il corresponde exactement à ton format de keypoints
     return rect.flatten().astype(int).tolist()
 
-
+# Keypoints fournis par le frontend et non plus avec OpenCV
+"""
 def trouver_coins_sudoku(image_pil, afficher_debug=False):
     # 1. Convertir l'image PIL en format OpenCV (numpy array)
     img_cv2 = np.array(image_pil)
@@ -175,3 +176,5 @@ def trouver_coins_sudoku(image_pil, afficher_debug=False):
         return points_ordonnes
     else:
         raise ValueError("Impossible de trouver la grille de Sudoku sur cette image.")
+
+  """
