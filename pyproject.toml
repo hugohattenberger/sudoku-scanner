@@ -1,0 +1,31 @@
+[project]
+name = "mlops-projet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hattenberger2003-create", email = "hattenberger2003@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.0.1",
+    "fastapi>=0.142.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "opencv-python>=5.0.0.93",
+    "pillow>=12.3.0",
+    "python-multipart>=0.0.32",
+    "requests>=2.34.2",
+    "streamlit>=1.65.0",
+    "streamlit-image-coordinates>=0.4.1",
+    "torch>=2.14.0",
+    "torchvision>=0.29.1",
+    "uvicorn>=0.54.0",
+]
+
+
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
